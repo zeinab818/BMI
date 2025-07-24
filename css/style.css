@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: url("../images/view-tape-measure-with-bell-pepper.jpg");
+    background-position:  bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background-color: #2e2e3a;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    background-color: #444;
+    box-shadow: 0 0 6px #ffafcc;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #ff7b00, #ff416c); /* برتقالي -> بينك */
+    box-shadow: 0 0 12px rgba(255, 65, 108, 0.4);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.result {
+    margin-top: 25px;
+    border-left: 5px solid #ff9e00;
+    box-shadow: 0 0 10px rgba(255, 174, 0, 0.3);
+    padding: 18px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    animation: popIn 0.4s ease-in-out;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
