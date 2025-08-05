@@ -54,14 +54,14 @@ h1 {
     margin-bottom: 20px;
 }
 
-label {
+label ,select {
     display: block;
     margin-bottom: 8px;
     color: #ccc;
     font-size: 14px;
 }
 
-input {
+input , select{
     width: 100%;
     padding: 12px;
     border-radius: 12px;
@@ -73,7 +73,8 @@ input {
     transition: 0.3s;
 }
 
-input:focus {
+input:focus
+,select:focus {
     background-color: #444;
     box-shadow: 0 0 6px #ffafcc;
 }
